@@ -1,0 +1,66 @@
+body{
+	background-color: #f3fcff;
+}
+
+.banner {
+	height: 100vh;
+	background: url(3.png);
+	background-position: 0 0;
+	animation: animated-pattern 10s linear infinite;
+}
+
+@keyframes animated-pattern {
+	from { background-position: 0 0 }
+
+	to { background-position: 0px 400px; }
+}
+.scatter{
+   padding-top:200px;
+	font-size:31px;
+	text-shadow: 1px 1px #1c1717,1px 1px #262424,1px 1px #170202,2px 2px black,2px 2px white,2px 2px grey,4px 4px #f37c13;
+	text-align:center;
+	
+   color:#f37c13;
+  
+}
+
+
+
+
+
+.footer{
+	text-align: center;
+font-size: 20px;
+font-style: italic;
+color: #180866;
+}
+
+.button{
+	
+	width:100%;
+}
+#displayMessage{
+	
+	margin:200px 30px;
+	padding:10px;
+	border-radius:50px;
+	animation:scattering 2s linear infinite ;
+	border:none;
+	box-shadow: 2px 2px 4px black,2px 2px 4px grey,2px 2px 4px black,2px 2px 4px grey;
+	background-color: white;
+	font-size: 21px;
+	/*! font-style: italic; */
+	font-weight: bold;
+}
+
+@keyframes scattering{
+	0%{
+		transform:scaleX(1) scaleY(1);
+	}
+	50%{
+		transform:scaleX(1.2) scaleY(1.2);
+	}
+	100%{
+		transform:scaleX(1) scaleY(1);
+	}
+}
